@@ -1,10 +1,12 @@
 # 🗂️ Job Application Tracker
 
-A clean, beginner-friendly web app built with **HTML**, **CSS**, and **JavaScript** that lets users record job applications and track their status with visual indicators.
+A clean, web app built with **HTML**, **CSS**, and **JavaScript** that lets users record job applications and track their status with visual indicators.
 
 Ideal for job seekers who want a simple but effective way to stay organized during the job search.
 
 ---
+🔗 *Live Demo*
+https://tshegofatso-ledwaba.github.io/Job-Application-Tracker-App/
 
 ## 🚀 Features
 
