@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Application Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>💼 Job Application Tracker</h1>
+
+  <form id="jobForm">
+    <label>Position:</label>
+    <input type="text" id="position" required />
+    
+    <label>Company:</label>
+    <input type="text" id="company" required />
+    
+    <label>Date Applied:</label>
+    <input type="date" id="date" required />
+    
+    <label>Status:</label>
+    <select id="status">
+      <option value="Applied">Applied</option>
+      <option value="Interview">Interview</option>
+      <option value="Rejected">Rejected</option>
+      <option value="Offer">Offer</option>
+    </select>
+
+    <label for="tags">Tags (comma-separated):</label>
+    <input type="text" id="tags" placeholder="e.g. Remote,Graduate" />
+
+    <button type="submit">Add Job</button>
+  </form>
+
+  <div style="margin-top: 15px;">
+    <label for="filterStatus">Filter by status:</label>
+    <select id="filterStatus">
+      <option value="All">All</option>
+      <option value="Applied">Applied</option>
+      <option value="Interview">Interview</option>
+      <option value="Rejected">Rejected</option>
+      <option value="Offer">Offer</option>
+    </select>
+
+    <label for="sortBy" style="margin-left: 20px;">Sort by:</label>
+    <select id="sortBy">
+      <option value="dateDesc">Newest First</option>
+      <option value="dateAsc">Oldest First</option>
+      <option value="status">Status</option>
+    </select>
+
+    <button id="darkModeToggle" style="float: right;">🌙 Toggle Dark Mode</button>
+  </div>
+
+  <div id="jobList"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
